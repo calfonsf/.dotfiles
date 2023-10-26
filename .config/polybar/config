@@ -378,10 +378,12 @@ padding-right = 5
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=12;1
+font-0 = JetbrainsMono:pixelsize=14;
+;font-0 = fixed:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = fixed:pixelsize=12;1
-
+font-3 = Fira Code:pixelsize=10;1
+font-4 = Fira Mono Nerd:pixelsize=16;1
 ; -------------------------------
 ; 	Modules instanciation 
 ; -------------------------------
@@ -532,17 +534,17 @@ bar-volume-foreground-5 = #0062FF
 bar-volume-foreground-6 = #0099FF
 bar-volume-gradient = false
 bar-volume-indicator = | 
-bar-volume-indicator-font = 2
+bar-volume-indicator-font = 0
 bar-volume-fill = ─
-bar-volume-fill-font = 2
+bar-volume-fill-font = 0
 bar-volume-empty = ─
-bar-volume-empty-font = 2
+bar-volume-empty-font = 0
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
 
 [module/pmenu]
 
 type = custom/text
-content = Pmenu  
+content = ⏻
+content-font=4
 click-left = pmenu
-

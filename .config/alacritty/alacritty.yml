@@ -839,10 +839,6 @@
 
 
 
-
-#-------------------------------------------------------------------
-
-
 #-------------------------------------------
 #-------------------------------------------
 #
@@ -856,16 +852,13 @@ window:
   # Opacity
   
   #opacity: 0.85
-
   
-  # Window title
-  
+  # Window title 
   title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
   
-
   # Window padding (changes require restart)
   
   # Blank space added around the window in pixels. This padding is scaled
@@ -878,18 +871,13 @@ window:
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
 
-
-
 #importing color themes
 
 import:
-  #- ~/.alacritty-colorscheme/themes/ayu_dark.yaml
-  - ~/.alacritty-colorscheme/themes/challenger_deep.yaml
-  #- ~/.alacritty-colorscheme/themes/Cobalt2.yaml
-  #- ~/.alacritty-colorscheme/themes/tokyo-night.yaml
-  #- ~/.alacritty-colorscheme/themes/atom_one_light.yaml
-
-
+  - ~/.config/alacritty/.alacritty-colorscheme/themes/tokyo-night.yaml
+  #- ~/.config/alacritty/.alacritty-colorscheme/themes/rose-pine.yaml
+  #- ~/.config/alacritty/.alacritty-colorscheme/themes/atom_one_light.yaml
+  # ~/.config/alacritty/.alacritty-colorscheme/themes/ayu/blood-moon.yaml
 cursor:
   #Cursor style
   style:
@@ -920,7 +908,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: monospace
+    family: Jetbrains Mono
+
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -959,7 +948,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 13.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -967,22 +956,4 @@ font:
   offset:
     x: 0
     y: 5
-
-  # Glyph offset determines the locations of the glyphs within their cells with
-  # the default being at the bottom. Increasing `x` moves the glyph to the
-  # right, increasing `y` moves the glyph upward.
-  #glyph_offset:
-  #x: 5
-  #y: 5
-
-  # Use built-in font for box drawing characters.
-  #
-  # If `true`, Alacritty will use a custom built-in font for box drawing
-  # characters (Unicode points 2500 - 259f).
-  #
-  #builtin_box_drawing: true
-
-# If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
-
 

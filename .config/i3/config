@@ -144,9 +144,6 @@ mode "resize" {
 
 
 
-# ---------------------------------------------------------------------------------------
-
-
 
 # |-------------------------------------------------------------|
 # |-------------------------------------------------------------|
@@ -238,11 +235,12 @@ mode "resize" {
 # |  	  Workspaces	  |
 #  -----------------------
 
-assign [class="Nemo"] 1
+# assign [class="Nemo"] 1
 assign [class="(?i)code"] 2
-assign [class="(?i)obsidian"] 3
-assign [class="firefox"] 4
-assign [class="smplayer"] 5
+assign [class="firefox"] 3
+assign [class="smplayer"] 4
+assign [class="Mpv"] 4
+assign [class="Nvim"] 2
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -258,7 +256,6 @@ set $ws9 "9"
 set $ws10 "10"
 
 
-
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -270,7 +267,6 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
-
 
 
 # move focused container to workspace
@@ -294,21 +290,20 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #for_window [class="firefox"] floating enable, move container to workspace 4; workspace 4
 
 
-
 #  -----------------------
 # |  	   Gaps  	  |
 #  -----------------------
 
-gaps inner 40
-#gaps outer 0
-smart_gaps on
+gaps inner 10
+gaps outer 5
+#smart_gaps on
 
 
 #  -----------------------
 # |  	  Startup	  |
 #  -----------------------
 
-exec_always --no-startup-id feh --bg-fill /home/carlos/Pictures/Wallpapers/bg.jpg
+exec_always --no-startup-id feh --bg-fill /home/carlos/Pictures/Wallpapers/wallpaper3.jpg
 exec_always --no-startup-id picom --experimental-backends -b 
 
 
@@ -320,17 +315,16 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 
 #  -------------------------------
-# |  	launcher (dMenu - rofi)   |
+# |  	launcher (dMenu -> rofi)   |
 #  -------------------------------
 
 # start dmenu (a program launcher)
-# bindsym $mod+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec --no-startup-id dmenu_run
  
 # A more modern dmenu replacement is rofi:
 bindsym $mod+d exec rofi -modi drun -show drun
 
 # Power Off Menu (pmenu)
- 
 bindsym $mod+F4 exec pmenu 0
 
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -342,22 +336,23 @@ bindsym $mod+F4 exec pmenu 0
 # |     Custom Bindings   |
 #  -----------------------
 
-bindsym $mod2+e exec "nemo"
+bindsym $mod2+e exec "ranger"
 
 
 #  -----------------------
 # |	   Title	  |
 #  -----------------------
 
-#Remove Title
+#Border (Remove Title)
 #default_border none
 default_border pixel
-
 #also border pixel and normal
 
 #Centrar titulo
 #title_align center
 
+
+#for_window [all] title_window_icon off padding 1
 
 
 #  -------------------------
@@ -369,7 +364,6 @@ focus_follows_mouse no
 #startup app
 #exec_always firefox
 
-#for_window [all] title_window_icon off padding 1
 
-
-
+# touchpad tap to click
+exec xinput set-prop "ELAN0511:01 04F3:303F Touchpad" "libinput Tapping Enabled" 1

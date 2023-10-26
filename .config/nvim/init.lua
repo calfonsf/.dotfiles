@@ -1,0 +1,2 @@
+require("CAF")
+print("Hello")
