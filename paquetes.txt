@@ -1,5 +1,4 @@
 --wm
-i3wm
 sway
 
 --terminal
@@ -17,14 +16,11 @@ mpv
 mpd
 
 --system-utilities
-feh
 ranger
-?rofi
-?polybar
+rofi
 
 --programming
 nodejs
 go
 rust
 NET
-
