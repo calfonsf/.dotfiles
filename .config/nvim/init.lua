@@ -1,2 +1,0 @@
-require("CAF")
-print("Hello")

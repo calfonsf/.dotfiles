@@ -876,8 +876,7 @@ window:
 import:
   - ~/.config/alacritty/.alacritty-colorscheme/themes/tokyo-night.yaml
   #- ~/.config/alacritty/.alacritty-colorscheme/themes/rose-pine.yaml
-  #- ~/.config/alacritty/.alacritty-colorscheme/themes/atom_one_light.yaml
-  # ~/.config/alacritty/.alacritty-colorscheme/themes/ayu/blood-moon.yaml
+  #- ~/.config/alacritty/.alacritty-colorscheme/themes/ayu/blood-moon.yaml
 cursor:
   #Cursor style
   style:
@@ -908,7 +907,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Jetbrains Mono
+    family: FiraMono Nerd Font 
 
 
     # The `style` can be specified to pick a specific face.
@@ -948,7 +947,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
