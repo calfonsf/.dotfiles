@@ -212,6 +212,7 @@ bar {
 #  -----------------------
 
 #bindsym $mod2+e exec "ranger"
+bindsym $mod+Print exec 'grim -g ~/Preview.png'
 
 
 #  -----------------------

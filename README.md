@@ -1,10 +1,15 @@
-# Especificaciones 
+# Dotfiles
 
-## Requisitos
+Repo with configurations files for my linux desktop
 
-- i3-wm
-- picom
-- feh
-- polybar
+## Requirements
+
+- swaywm
 - rofi
 - alacritty
+- nvim
+- doom-emacs
+
+## Preview
+
+
