@@ -1,0 +1,12 @@
+#! /bin/sh
+
+
+chosen=$(printf "Power Off\nRestart\nLog Out\nLock" |rofi -dmenu -me-accept-entry 'MousePrimary' -me-select-entry '' -i -theme-str '@import "pmenu.rasi"')
+
+case "$chosen" in
+	"Power Off") poweroff ;;
+	"Restart") reboot ;;
+	"Log Out") i3-msg exit ;;
+	"Lock") i3lock ;;
+	*) exit 1 ;;
+esac
