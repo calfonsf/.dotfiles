@@ -4,11 +4,15 @@ Repo with configurations files for my linux desktop
 
 ## Requirements
 
-- swaywm
 - rofi
 - alacritty
-- nvim
-- doom-emacs
+- compfy/picom
+- awesomewm
+- eww
+- mpv
+- mpd & ncmpcpp
+- ranger
+
 
 ## Preview
 
