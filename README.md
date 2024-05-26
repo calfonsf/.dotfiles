@@ -12,4 +12,4 @@ Repo with configurations files for my linux desktop
 
 ## Preview
 
-![preview](img.png)
+![preview](preview.png)
