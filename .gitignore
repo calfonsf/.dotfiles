@@ -1,0 +1,14 @@
+*
+!eww/
+!mpv/
+!awesome/
+!mpd/
+!ncmpcpp/
+!picom/
+!rofi/
+!alacritty/
+!doom/
+!picom.conf
+
+
+!.gitignore
