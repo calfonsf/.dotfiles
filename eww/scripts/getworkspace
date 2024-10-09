@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# BSPWM
-#bspc query -D -d focused --names
-
-# AwesomeWM
-# you get it from your lua script
-
